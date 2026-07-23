@@ -412,9 +412,14 @@ async function checkout() {
 
 function paintStaticCopy() {
   $("#announce").textContent = BRAND.shippingLine;
-  $("#brand-name").textContent = BRAND.name;
+  const nameEl = $("#brand-name");
+  if (BRAND.logo && BRAND.logoIncludesName) {
+    nameEl.className = "visually-hidden";   // keep for screen readers
+  }
+  nameEl.textContent = BRAND.name;
   $("#hero-kicker").textContent = BRAND.heroKicker;
-  $("#hero-title").textContent = BRAND.name;
+  $("#hero-title").innerHTML =
+    `<span class="thin">Shop</span> ${escapeHtml(BRAND.name)}`;
   $("#hero-tagline").textContent = BRAND.tagline;
   $("#handoff").textContent = BRAND.sellerNote;
   $("#footer-legal").textContent =

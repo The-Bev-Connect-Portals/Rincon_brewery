@@ -35,7 +35,10 @@ make the handoff feel more seamless. The disclosure line in the cart drawer
 
 1. Copy this repo.
 2. Edit `brand.config.js` — identity, colors, fonts, copy, filters, `vendorTag`.
-3. Drop `logo.svg` + `favicon.png` into `assets/`.
+3. Drop `logo.png` (or `.svg`) + `favicon.png` into `assets/`.
+   Set `logoIncludesName: true` if the logo art already contains the
+   brand name — the header then hides the text wordmark (kept for
+   screen readers) instead of printing it twice.
 4. Deploy to Netlify.
 
 If you edit any other file to onboard a brand, the abstraction has leaked.
@@ -100,6 +103,26 @@ brand portals open in one browser don't collide.
 not on every add — fewer API calls, simpler state. A `source` attribute records
 which portal the order came from, for attribution and P&L allocation.
 Confirm that attribute survives into ShipStation.
+
+---
+
+## Brand identity source
+
+Palette and type are taken from rinconbrewery.com, not invented:
+
+| Token | Hex | Where it comes from |
+| --- | --- | --- |
+| `bg` | `#EBE3D6` | Their page background (bone) |
+| `accent` | `#4E5B31` | Their primary olive |
+| `gold` | `#F4BA7A` | Their nav highlight / `theme-color` meta |
+| `text` | `#2B2E21` | Deep olive-black |
+
+Type is **Montserrat**, the face their site loads. Since it's one family
+doing both display and body, the display voice comes from weight (800)
+plus uppercase and wide tracking rather than a second typeface.
+
+The logo is their surfer-and-wave badge, trimmed of transparent padding
+and resized. It carries the wordmark, hence `logoIncludesName`.
 
 ---
 

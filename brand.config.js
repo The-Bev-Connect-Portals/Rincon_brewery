@@ -11,33 +11,36 @@ export const BRAND = {
   // ── Identity ──────────────────────────────────────────────
   name: "Rincon Brewery",
   vendorTag: "Rincon Brewery",     // MUST match Shopify `vendor` exactly
-  logo: "/assets/logo.svg",
+  logo: "/assets/logo.png",
+  // true when the logo image already contains the brand name, so the
+  // header doesn't print it twice. Icon-only marks should set false.
+  logoIncludesName: true,
   favicon: "/assets/favicon.png",
 
   // ── Look ──────────────────────────────────────────────────
   // Fed into CSS custom properties on :root at boot.
   // styles.css references only these — no hardcoded hex anywhere.
   colors: {
-    bg:         "#0E1719",   // deep kelp — near-black with green in it
-    surface:    "#162225",   // raised cards
-    surfaceAlt: "#1E2D31",   // hover / secondary raise
-    text:       "#F2EFE6",   // warm bone, not pure white
-    muted:      "#8FA3A3",   // sea-fog grey
-    line:       "#243437",   // hairline dividers
-    accent:     "#E8623B",   // sunset orange — the Rincon point break at dusk
-    accentText: "#0E1719",
-    gold:       "#D9A441",   // secondary accent, used sparingly
+    bg:         "#EBE3D6",   // bone — their page background
+    surface:    "#FFFFFF",   // cards
+    surfaceAlt: "#E0D8C8",   // hover / raised
+    text:       "#2B2E21",   // deep olive-black
+    muted:      "#6E7263",   // sage grey
+    line:       "#D5CCBB",   // hairline
+    accent:     "#4E5B31",   // Rincon olive — their primary
+    accentText: "#F6F1E6",
+    gold:       "#F4BA7A",   // apricot — their secondary/nav highlight
   },
   fonts: {
-    display: "'Bebas Neue', Impact, sans-serif",
-    body:    "'Archivo', system-ui, sans-serif",
+    display: "'Montserrat', system-ui, sans-serif",
+    body:    "'Montserrat', system-ui, sans-serif",
     googleFontsHref:
-      "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@400;500;600;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap",
   },
 
   // ── Copy ──────────────────────────────────────────────────
-  tagline: "Ventura County beer, shipped to your door.",
-  heroKicker: "Brewed on the coast",
+  tagline: "Coastal beer from the Rincon, shipped straight to your door.",
+  heroKicker: "Ventura \u00b7 Carpinteria \u00b7 Central Coast",
   backToSiteUrl: "https://rinconbrewery.com",
   backToSiteLabel: "Back to Main Site",
 
