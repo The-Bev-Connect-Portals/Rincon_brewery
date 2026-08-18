@@ -19,3 +19,7 @@
   for = "/brand.config.js"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Repo moved to The-Bev-Connect-Portals org, 2026-08-18.
+# Netlify GitHub App reinstalled on the org; this comment exists to
+# confirm the webhook survived the transfer. Safe to delete.
