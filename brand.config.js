@@ -71,7 +71,7 @@ export const BRAND = {
   // scoped to public product data. NEVER put an Admin token here.
   shopDomain:      "bro-basket.myshopify.com",
   storefrontToken: "46806eb0a24cc1df3d61a4bee836b228",
-  apiVersion:      "2025-01",
+  apiVersion:      "2026-04",
 
   // Cart attribute for order attribution / P&L allocation.
   sourceTag: "rincon-portal",
