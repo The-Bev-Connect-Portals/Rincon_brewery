@@ -69,8 +69,8 @@ export const BRAND = {
   // ── Shopify ───────────────────────────────────────────────
   // Public Storefront token. Safe to ship client-side: read-only,
   // scoped to public product data. NEVER put an Admin token here.
-  shopDomain:      "bro-basket.myshopify.com",
-  storefrontToken: "46806eb0a24cc1df3d61a4bee836b228",
+  shopDomain:      "fbxhgf-1f.myshopify.com",   // Brew Hunters — migrated off bro-basket.myshopify.com 2026-09-11
+  storefrontToken: "ca95a64615190045984062491f38487d",   // Brew Hunters "Rincon Brewing" headless channel
   apiVersion:      "2026-04",
 
   // Cart attribute for order attribution / P&L allocation.
